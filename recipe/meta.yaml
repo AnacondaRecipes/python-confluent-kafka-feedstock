@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  skip: True # [py<38]
+  skip: True # [py<38 or s390x]
   script:
     - export CFLAGS="${CFLAGS} -I${PREFIX}/include"  # [unix]
     - export LDFLAGS="${LDFLAGS} -I${PREFIX}/lib"    # [unix]
