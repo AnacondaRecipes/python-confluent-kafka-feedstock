@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/confluentinc/confluent-kafka-python/archive/refs/tag/v{{ version }}.tar.gz
+  url: https://github.com/confluentinc/confluent-kafka-python/archive/refs/tags/v{{ version }}.tar.gz
   sha256: ee099702bd5fccd3ce4916658fed4c7ef28cb22e111defb843d27633100ff065
   patches:
     - 0001-Fix-setup-for-windows.patch  # [win]
