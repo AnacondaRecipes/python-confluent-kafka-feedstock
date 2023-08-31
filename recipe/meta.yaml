@@ -29,6 +29,8 @@ requirements:
     - setuptools
     - pip
     - wheel
+    - patch       # [osx and x86_64]
+    - m2-patch    # [win64]
   host:
     - librdkafka
   run:
@@ -53,7 +55,8 @@ about:
     providing full Kafka protocol support with great performance and
     reliability.
   doc_url: http://docs.confluent.io/current/clients/confluent-kafka-python/index.html
-
+  dev_url:
+  license_family:
 extra:
   recipe-maintainers:
     - rmax
