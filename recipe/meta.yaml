@@ -20,6 +20,7 @@ build:
     - export LDFLAGS="${LDFLAGS} -I${PREFIX}/lib"    # [unix]
     - set CFLAGS="%CFLAGS% /I%LIBRARY_INC%"          # [win]
     - set LDFLAGS="%LDFLAGS% /I%LIBRARY_LIB%"        # [win]
+    - {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv .
 
 
 requirements:
