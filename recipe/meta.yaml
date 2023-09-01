@@ -38,12 +38,15 @@ requirements:
     - librdkafka
 
 test:
+  source_files:
+    - tests
   requires:
     - pip
-  imports:
-    - confluent_kafka
+    - pytest
+    - flake8
   commands:
     - pip check
+    - pytest tests -vv
 
 about:
   home: https://github.com/confluentinc/confluent-kafka-python
