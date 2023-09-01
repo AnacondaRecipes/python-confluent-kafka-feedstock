@@ -44,9 +44,11 @@ test:
     - pip
     - pytest
     - flake8
+  imports:
+    - confluent_kafka
   commands:
     - pip check
-    - pytest tests -vv
+    - pytest tests/test_*.py
 
 about:
   home: https://github.com/confluentinc/confluent-kafka-python
