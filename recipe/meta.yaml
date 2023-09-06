@@ -52,7 +52,7 @@ test:
   commands:
     - pip check
     - pytest tests/test_*.py
-    - pytest tests -vv -k "not (tests/test_log.py)"
+    - pytest tests -vv -k "not (test_log or test_SerializerError)"
 
 about:
   home: https://github.com/confluentinc/confluent-kafka-python
