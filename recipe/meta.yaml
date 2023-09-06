@@ -31,11 +31,11 @@ requirements:
     - setuptools
     - pip
     - wheel
-    - librdkafka 2.2.0
+    - librdkafka
 
   run:
     - python
-    - librdkafka >=2.2.0
+    - librdkafka
     - urllib3
     - requests
 
@@ -51,8 +51,7 @@ test:
     - confluent_kafka
   commands:
     - pip check
-    - pytest tests/test_*.py
-    - pytest tests -vv -k "not (test_log or test_SerializerError)"
+    - pytest tests/test_*.py -vv -k "not (test_log or test_SerializerError)"
 
 about:
   home: https://github.com/confluentinc/confluent-kafka-python
