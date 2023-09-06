@@ -33,9 +33,11 @@ requirements:
     - pip
     - wheel
     - librdkafka
+
   run:
     - python
     - librdkafka
+    - urllib3
 
 test:
   source_files:
