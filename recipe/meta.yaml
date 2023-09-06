@@ -46,6 +46,7 @@ test:
   requires:
     - pip
     - pytest
+    - pytest-timeout
   imports:
     - confluent_kafka
   commands:
