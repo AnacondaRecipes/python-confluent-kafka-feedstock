@@ -38,22 +38,21 @@ requirements:
     - librdkafka >=2.2.0
     - urllib3
     - requests
-    - fastavro
 
 test:
   source_files:
     - tests
   requires:
     - pip
-    - pytest>=6.0.0
+    - pytest
     - pytest-timeout
-    - fastavro
     - urllib3
   imports:
     - confluent_kafka
   commands:
     - pip check
     - pytest tests/test_*.py
+    - pytest tests -vv -k "not (tests/test_log.py)"
 
 about:
   home: https://github.com/confluentinc/confluent-kafka-python
