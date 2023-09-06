@@ -46,7 +46,6 @@ test:
   requires:
     - pip
     - pytest
-    - flake8
   imports:
     - confluent_kafka
   commands:
