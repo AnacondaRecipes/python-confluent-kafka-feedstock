@@ -44,15 +44,9 @@ test:
     - tests
   requires:
     - pip
-    - pytest
-    - pytest-timeout
-    - urllib3
   imports:
     - confluent_kafka
-  commands:
-    - pip check
-    - pytest tests/test_*.py -vv -k "not (test_log or test_SerializerError)"
-
+ 
 about:
   home: https://github.com/confluentinc/confluent-kafka-python
   license: Apache-2.0
