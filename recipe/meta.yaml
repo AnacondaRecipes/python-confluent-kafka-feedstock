@@ -38,6 +38,7 @@ requirements:
     - python
     - librdkafka
     - urllib3
+    - requests
 
 test:
   source_files:
