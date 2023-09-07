@@ -31,11 +31,11 @@ requirements:
     - setuptools
     - pip
     - wheel
-    - librdkafka {{ version }}
+    - librdkafka
 
   run:
     - python
-    - librdkafka >={{ version }}
+    - librdkafka
 
 test:
   source_files:
