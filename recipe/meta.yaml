@@ -55,7 +55,7 @@ about:
     Confluent's Kafka client for Python wraps the librdkafka C library,
     providing full Kafka protocol support with great performance and
     reliability.
-  doc_url: https://github.com/confluentinc/confluent-kafka-python#readme
+  doc_url: https://github.com/confluentinc/confluent-kafka-python/blob/master/README.md
   dev_url: https://github.com/confluentinc/confluent-kafka-python
 
 extra:
