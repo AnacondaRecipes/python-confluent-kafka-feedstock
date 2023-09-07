@@ -31,7 +31,7 @@ requirements:
     - setuptools
     - pip
     - wheel
-    - librdkafka 2.2.0
+    - librdkafka {{ version }}
 
   run:
     - python
