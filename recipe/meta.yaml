@@ -44,6 +44,8 @@ test:
     - pip
   imports:
     - confluent_kafka
+  commands:
+    - pip check
 
 about:
   home: https://github.com/confluentinc/confluent-kafka-python
