@@ -35,7 +35,7 @@ requirements:
 
   run:
     - python
-    - librdkafka >={{ version }}
+    - librdkafka {{ version }}
 
 test:
   source_files:
