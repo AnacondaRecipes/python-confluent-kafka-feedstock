@@ -38,8 +38,6 @@ requirements:
     - librdkafka {{ version }}
 
 test:
-  source_files:
-    - tests
   requires:
     - pip
   imports:
