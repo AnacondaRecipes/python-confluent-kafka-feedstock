@@ -37,6 +37,12 @@ requirements:
     - python
     - librdkafka >={{ version }}
 
+  run_constrained:
+  #following does not work, see https://github.com/conda/conda-build/issues/5038
+  #    - openssl {{ openssl }}
+    - openssl 1.1.1 # [openssl_variant == "current"]
+    - openssl 3.0 # [openssl_variant == "legacy"]
+
 test:
   requires:
     - pip
