@@ -13,7 +13,7 @@ source:
     - 0001-Fix-setup-for-windows.patch  # [win]
 
 build:
-  number: 0
+  number: 1
   skip: True # [py<38 or s390x]
   script:
     - export CFLAGS="${CFLAGS} -I${PREFIX}/include"  # [unix]
@@ -24,8 +24,8 @@ build:
 
 requirements:
   build:
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
-    - m2-patch    # [win]
   host:
     - python
     - setuptools
